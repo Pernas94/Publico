@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *body {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            height:200px;
+        }
+
+        #cajon {
+            
+            height: 200px;
+            display: flex;
+        }
+
+        #caja1 {
+
+            width: 33%;
+            background-color:red;
+        }
+
+        #caja2 {
+            width: 34%;
+            background-color:yellow;
+           
+        }
+
+        #caja3 {
+            width: 33%;
+            background-color:purple;
+        }
+        @media screen and (max-width:600px){
+            #cajon{
+              display: block;
+
+            }
+            #caja1, #caja2,#caja3{
+
+                width:100%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="cajon">
+        <div id="caja1">
+            hola
+        </div>
+        <div id="caja2">
+            HOLA
+        </div>
+        <div id="caja3">
+
+        </div>
+    </div>
+    <p>Verás el texto pero debajo el código de tecla usada cada vez</p>
+
+    <input type="text">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">$(document).ready(function(){ 
+        $("input").keydown(function(event){
+            $("div").html("Tecla: "+event.which);
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <title>Práctica Local Storage</title>
+    <meta charset="UTF-8" />
+
+    <style>
+        /* aquí estilos aplicados solo a esta pagina */
+    </style>
+    <script>
+
+
+    </script>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Práctica localStorage</h1>
+        <p>Es una forma de almacenar información en el lado cliente para descargar de trabajo al servidor</p>
+    </header>
+
+
+
+    <main>
+        <h1>TÍTULO PRINCIPAL VISIBLE</h1>
+        <!--Un solo h1 en cada página, por motivos de posicionamiento web-->
+
+
+        <p id="mensaje">Hola</p>
+
+        <form name="miFormulario" onsubmit="return guardar()">
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Apellidos:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit">
+        </form>
+
+    </main>
+
+    <script type="text/javascript">
+        function guardar() {
+            if (typeof (Storage) !== "undefined") {
+                //Storage
+                //var x = document.forms["miFormulario"]["lname"].value;
+                sessionStorage.setItem("nombre", document.forms["miFormulario"]["fname"].value);
+                //Retrieve
+                document.getElementById('mensaje').innerHTML = sessionStorage.getItem("nombre");
+            } else {
+                document.getElementById('mensaje').innerHTML = "Este navegador no soporta web storage";
+            }
+            //con false paramos el submit que evita que nos borre la información que teniamos de antes (nombre y apellidos)
+            return false;
+        }
+
+    </script>
+</body>
+
+</html>
