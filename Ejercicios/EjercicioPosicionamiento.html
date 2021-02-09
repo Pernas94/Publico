@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        .pos-rel{
+          poition:relative;
+          /*el contenido mantiene su espacio RELATIVO a su posición de forma natural, y lo amplia*/
+          margin-top:30px;
+          margin-left:30px;
+          color:red;
+        }
+
+        .pos-fixed{
+          position:fixed;
+          /*el contenido toma su lugar original, pero se "ancla" en esa posición de la pantalla, y deja libre su sitio original. Si hacemos scroll, se queda anclado en esa posición,
+          como los menús de página web que bajan al hacer scroll*/
+
+          color:red;
+
+        }
+
+        .pos-absolute{
+          /*El contenido se desplaza desde donde le tocaría de forma natural, permitiendo que su sitio original sea ocupado*/
+          position:absolute;
+          margin-top:30px;
+          margin-left:30px;
+          color:red;
+        }
+
+        .pos-sticky{
+          /*el contenido se queda en su posición inicial, pero cuando haces scroll "acompaña" a la pantalla, quedádnose en el margen que se le haya indicado.
+          Si le decimos 'top:0px;', se interpreta que el contenido debe quedar en el margen superior una vez se haya hecho scroll.*/
+          position:sticky;
+          color:red;
+          left:50px;
+
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>POSICIONAMIENTO</h1>
+    <ol>
+      <li class="pos-absolute">Posición absolute</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li class="pos-rel">Posición relativa</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li class="pos-fixed">Posición fixed</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li class="pos-sticky">Posicionamiento sticky</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li class="pos-sticky">Posicionamiento sticky</li>
+      <li>Texto</li>
+      <li>Texto</li>
+      <li>Texto</li>
+
+
+
+
+    </ol>
+  </body>
+</html>
