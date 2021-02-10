@@ -4,25 +4,44 @@
 <head>
   <meta charset="utf-8">
   <title>Mauro Pernas</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
 </head>
 
 <body>
-  <h3>Estos son mis ejercicios:</h3>
-  <details>
-    <summary>Ejercicios: </summary>
-    <ol type="1">
-      <li><a href="Ejercicios\CV- Cristerios SEO.pdf" target="_blank">Criterios SEO</a></li>
-      <li><a href="Ejercicios\Ejercicio Cajas.html" target="_blank">Ejercicio cajas</a></li>
-      <li><a href="Ejercicios\PrácticaLocalStorage.html" target="_blank">Práctica Local Storage</a></li>
-      <li><a href="Ejercicios\EjercicioImagenConTexto.html" target="_blank">Ejercicio Imágen con Texto</a></li>
-      <li><a href="Ejercicios\EjercicioPosicionamiento.html" target="_blank">Ejercicio posicionamiento</a></li>
-      <li><a href="Ejercicios\mpn nazi.png" target="_blank">Mi pasado oscuro</a></li>
-    </ol>
-  </details>
 
-  <input type="text" name="campo1">
-  <input type="text" name="campo2">
+  <div id="navBar">
+    <div><img class="logo" src="CSS\Imagenes\MCodes-logo2.png" alt="M Codes logo"></div>
+    <div style="width:50%; display:flex;">
+      <div class="linkNav"><a href="index.html">Ejercicios</a></div>
+      <div class="linkNav">Web personal</div>
+      <div class="linkNav">Sobre mi</div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <h3>Estos son mis ejercicios:</h3>
+    <details>
+      <summary>Ejercicios: </summary>
+      <ol type="1">
+        <li><a href="Ejercicios\CV- Cristerios SEO.pdf" target="_blank">Criterios SEO</a></li>
+        <li><a href="Ejercicios\Ejercicio Cajas.html" target="_blank">Ejercicio cajas</a></li>
+        <li><a href="Ejercicios\PrácticaLocalStorage.html" target="_blank">Práctica Local Storage</a></li>
+        <li><a href="Ejercicios\EjercicioImagenConTexto.html" target="_blank">Ejercicio Imágen con Texto</a></li>
+        <li><a href="Ejercicios\EjercicioPosicionamiento.html" target="_blank">Ejercicio posicionamiento</a></li>
+        <li><a href="Ejercicios\EsqueletoWeb.html" target="_blank">Ejercicio esqueleto web</a></li>
+        <li><a href="Ejercicios\mpn nazi.png" target="_blank">Mi pasado oscuro</a></li>
+      </ol>
+    </details>
+
+    <br><br><br><br>
+    <input type="text" name="campo1">
+    <input type="text" name="campo2">
+  </div>
+
+
+
   <script>
     $(document).ready(function() {
       $("input").focus(function() {
